@@ -227,6 +227,9 @@ void clook()
 }
 int main(int argc, char const *argv[])
 {
+    for(int i =0; i<100;i++){
+        printf();
+    }
     printf("Enter l & r :\t");
     scanf("%i %i", &l, &r);
     printf("Enter the length of queue :\t");
