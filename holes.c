@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <limits.h>
+
+// Start
+
 int n, np;
 struct hole
 {
@@ -25,6 +28,9 @@ void in()
         h[i].visited = false;
     }
 }
+
+// First Fit
+
 void ff()
 {
     int i, j;
@@ -54,6 +60,9 @@ void ff()
     }
     printf("\n");
 }
+
+// Best Fit
+
 void bf()
 {
     int i, j;
@@ -93,6 +102,9 @@ void bf()
     }
     printf("\n");
 }
+
+// Worst Fit
+
 void wf()
 {
     int i, j;
@@ -132,6 +144,9 @@ void wf()
     }
     printf("\n");
 }
+
+// Driver Code
+
 int main()
 {
     int c;
@@ -177,3 +192,5 @@ int main()
         }
     }
 }
+
+// END
