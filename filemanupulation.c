@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+// Start
+
 struct file
 {
     int si;
@@ -49,6 +52,9 @@ int seq()
     }
 
 }
+
+// Indexed
+
 int ind()
 {
     scanf("%i", &n);
@@ -98,9 +104,14 @@ int ind()
     }
 
 }
+
+// driver code
+
 int main(int argc, char const *argv[])
 {
     // seq();
     // ind();
     return 0;
 }
+
+// ENd
