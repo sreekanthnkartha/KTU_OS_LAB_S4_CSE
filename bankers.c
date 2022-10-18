@@ -130,17 +130,19 @@ int bankers()
                         if (alble[k] < ned[j][k])
                             check = 1;
                     }
-                    if (check == 0 && visited[j] == 0)
+                    if (check == 0)
                     {
-                        // printf("p%i ",j);
-                        for (int k = 0; k < m; k++)
-                        {
-                            alble[k] += a[j][k];
+                        if(visited[j] == 0){
+                            // printf("p%i ",j);
+                            for (int k = 0; k < m; k++)
+                            {
+                                alble[k] += a[j][k];
+                            }
+                            visited[j] = 1;
+                            proc[x++] = j;
+                            // printf("p%i", proc[x - 1]);
+                            c++;
                         }
-                        visited[j] = 1;
-                        proc[x++] = j;
-                        // printf("p%i", proc[x - 1]);
-                        c++;
                     }
                 }
             }
