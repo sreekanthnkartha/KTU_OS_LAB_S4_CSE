@@ -1,3 +1,7 @@
+/*
+EXPERIMENT: MEMORY ALLOCATION
+AUTHOR: SREEKANTH N KARTHA
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
