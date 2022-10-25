@@ -7,9 +7,8 @@ AUTHOR: SREEKANTH N KARTHA
 #include <stdbool.h>
 #include <limits.h>
 
-// Start
-
 int n, np;
+
 struct hole
 {
     int size;
@@ -20,13 +19,17 @@ struct pro
     int size;
     int index;
 } p[40];
+
+//Initialise Function: 
 void in()
 {
     int i;
+//  Clear the index of every process.
     for (i = 0; i < np; i++)
     {
         p[i].index = -1;
     }
+//  Make every node unvisited.
     for (i = 1; i <= n; i++)
     {
         h[i].visited = false;
@@ -34,7 +37,7 @@ void in()
 }
 
 // First Fit
-
+// In this method, first job claims the first available memory with space more than or equal to it’s size.
 void ff()
 {
     int i, j;
@@ -66,7 +69,9 @@ void ff()
 }
 
 // Best Fit
-
+// In this method, the operating system first searches the whole of the memory 
+// according to the size of the given job and allocates it to the closest-fitting 
+// free partition in the memory, making it able to use memory efficiently.
 void bf()
 {
     int i, j;
@@ -108,7 +113,8 @@ void bf()
 }
 
 // Worst Fit
-
+// In this allocation technique, the process traverses the whole memory and always search for the largest hole/partition, 
+// and then the process is placed in that hole/partition.
 void wf()
 {
     int i, j;
